@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>ESTUDIANTE</legend>
+            <label for="nameE">Nombre del estudiante</label>
+            <input type="text" id="nameE" required>
+            <br>
+            <label for="quantity">Cantidad de materias o asignaturas</label>
+            <input type="number" id="quantity" required>
+            <br>
+            <label for="courseV">Valor de cada materia o asignatura</label>
+            <input type="number" id="courseV" required>
+            <br>
+            <input type="checkbox" id="documentE" checked>
+            <label for="documentE">Papelería</label>
+            <input type="checkbox" id="card" checked>
+            <label for="card">Carnet</label>
+            <br>
+            <button type="button" onclick="entrada()">Enviar</button>
+            <fieldset id="total">
+                <legend>TOTAL</legend>
+                <h2 id="nameET""></h2>
+                <p id="courseVT"></p>
+                <p id="deduction"></p>
+                <p id="add"></p>
+                <p id="totalP"></p>
+
+            </fieldset>          
+        </fieldset>
+    </form>
+    
+    <script src="js/js.js"></script>
+</body>
+</html>
